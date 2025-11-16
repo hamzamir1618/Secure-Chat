@@ -8,7 +8,8 @@ import argparse
 import secrets
 import hashlib
 from typing import Optional
-from dotenv import load_dotenv
+from dotenv import load_dotenv 
+
 
 from app.common.protocol import (
     HelloMessage, ServerHelloMessage, RegisterMessage, LoginMessage,

@@ -6,7 +6,8 @@ from datetime import datetime, timedelta
 from cryptography import x509
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.primitives.asymmetric import rsa
-from cryptography.x509.oid import NameOID, ExtensionOID, BasicConstraints
+from cryptography.x509 import BasicConstraints, Name
+from cryptography.x509.oid import NameOID
 
 
 def generate_ca(name: str = "FAST-NU Root CA"):
